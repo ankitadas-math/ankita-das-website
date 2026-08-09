@@ -1,11 +1,405 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Events — Ankita Das</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="container header-inner"><div><a class="name" href="index.html">Ankita Das</a><div class="affiliation">PhD Research Scholar in Mathematics · SRM University AP</div></div><nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="talks.html">Talks &amp; Slides</a><a href="notes.html">Notes</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="beyond.html">Beyond Mathematics</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-</nav></div></header>
-<main class="container"><div class="page-intro"><h1>Events</h1><p>Conferences, workshops, talks, and other academic events.</p></div>
-<section class="content"><div class="two-col"><div class="side-label">Upcoming</div><div>
-<div class="event"><div class="event-date">June 2027</div><div><div class="item-title">LuCaNT 2027</div><div class="meta">CIRM, Luminy, France</div><a href="https://lucant.org/" target="_blank" rel="noopener">Conference website</a></div></div>
-<div class="event"><div class="event-date">July 2027</div><div><div class="item-title">CNTA XVII</div><div class="meta">Vancouver, Canada</div><a href="https://www.cecm.sfu.ca/CNTA2027/" target="_blank" rel="noopener">Conference website</a></div></div>
-<p class="meta" style="margin-top:18px">Additional events and presentation details will be added when confirmed.</p>
-</div></div></section>
-<section class="content"><div class="two-col"><div class="side-label">Past</div><div><p>Past talks, conferences, and workshops will be listed here chronologically.</p></div></div></section></main><footer><div class="container footer-inner"><span>Ankita Das · Mathematics</span><span><a href="cv.html">CV</a> · 2026</span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Conferences, research programmes, symposia, and academic events attended by Ankita Das.">
+
+  <title>Events — Ankita Das</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* =========================
+       EVENTS PAGE
+       ========================= */
+
+    .events-page .page-intro {
+      padding: 62px 0 42px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .events-page .page-intro h1 {
+      margin: 0 0 18px;
+      max-width: 850px;
+    }
+
+    .events-page .page-intro p {
+      max-width: 780px;
+      margin: 0;
+    }
+
+    .events-section {
+      padding: 42px 0 30px;
+    }
+
+    .events-section .section-label {
+      margin-bottom: 18px;
+    }
+
+    .event-entry {
+      display: grid;
+      grid-template-columns: 185px 1fr;
+      gap: 38px;
+      padding: 25px 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .event-entry:first-of-type {
+      border-top: 1px solid var(--ink);
+    }
+
+    .event-meta {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .event-meta strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+
+    .event-content {
+      max-width: 800px;
+    }
+
+    .event-type {
+      margin-bottom: 6px;
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .event-content h2 {
+      margin: 0 0 7px;
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 22px;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+
+    .event-content p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .events-note {
+      padding: 35px 0 45px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .events-note p {
+      max-width: 780px;
+      margin: 0;
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 760px) {
+
+      .events-page .page-intro {
+        padding: 45px 0 32px;
+      }
+
+      .event-entry {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 22px 0;
+      }
+
+      .events-section {
+        padding-top: 32px;
+      }
+
+      .event-content h2 {
+        font-size: 20px;
+      }
+
+    }
+  </style>
+</head>
+
+
+<body>
+
+<header>
+  <div class="container header-inner">
+
+    <div>
+      <a class="name" href="index.html">Ankita Das</a>
+
+      <div class="affiliation">
+        PhD Research Scholar in Mathematics · SRM University AP
+      </div>
+    </div>
+
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="talks.html">Talks &amp; Slides</a>
+      <a href="notes.html">Notes</a>
+      <a href="events.html" class="current">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="beyond.html">Beyond Mathematics</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main class="container events-page">
+
+
+  <!-- INTRODUCTION -->
+
+  <section class="page-intro">
+
+    <div class="label">EVENTS</div>
+
+    <h1>
+      Conferences, programmes,<br>
+      and mathematical gatherings.
+    </h1>
+
+    <p>
+      A record of conferences, research programmes, symposia, and other
+      academic events that have been part of my mathematical journey.
+    </p>
+
+  </section>
+
+
+  <!-- PAST EVENTS -->
+
+  <section class="events-section">
+
+    <div class="section-label">
+      CONFERENCES &amp; ACADEMIC PROGRAMMES
+    </div>
+
+
+    <!-- JULY 2026 -->
+
+    <article class="event-entry">
+
+      <div class="event-meta">
+        <strong>July 2026</strong>
+        Bengaluru, India
+      </div>
+
+      <div class="event-content">
+
+        <div class="event-type">
+          Annual Conference
+        </div>
+
+        <h2>
+          41st Annual Conference of Ramanujan Mathematical Society
+        </h2>
+
+        <p>
+          Manipal Academy of Higher Education (MAHE), Bengaluru, India
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- DECEMBER 2025 — IWM -->
+
+    <article class="event-entry">
+
+      <div class="event-meta">
+        <strong>December 2025</strong>
+        Chennai, India
+      </div>
+
+      <div class="event-content">
+
+        <div class="event-type">
+          Research Programme
+        </div>
+
+        <h2>
+          Indian Women and Mathematics (IWM), Research in Groups Programme
+        </h2>
+
+        <p>
+          Institute of Mathematical Sciences (IMSc), Chennai, India
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- DECEMBER 2025 — SAKURA -->
+
+    <article class="event-entry">
+
+      <div class="event-meta">
+        <strong>December 2025</strong>
+        Japan
+      </div>
+
+      <div class="event-content">
+
+        <div class="event-type">
+          Academic Exchange Programme
+        </div>
+
+        <h2>
+          Sakura Science Program
+        </h2>
+
+        <p>
+          Shimane University, Japan
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- OCTOBER 2025 -->
+
+    <article class="event-entry">
+
+      <div class="event-meta">
+        <strong>October 2025</strong>
+        Andhra Pradesh, India
+      </div>
+
+      <div class="event-content">
+
+        <div class="event-type">
+          International Conference
+        </div>
+
+        <h2>
+          International Conference on Class Groups of Number Fields
+          and Related Topics (ICCGNFRT-2025)
+        </h2>
+
+        <p>
+          SRM University AP, Andhra Pradesh, India
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- JANUARY 2025 -->
+
+    <article class="event-entry">
+
+      <div class="event-meta">
+        <strong>January 2025</strong>
+        Kerala, India
+      </div>
+
+      <div class="event-content">
+
+        <div class="event-type">
+          Symposium
+        </div>
+
+        <h2>
+          Frontier Symposium in Mathematics (FSM-2025)
+        </h2>
+
+        <p>
+          IISER Thiruvananthapuram, Kerala, India
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- OCTOBER 2023 -->
+
+    <article class="event-entry">
+
+      <div class="event-meta">
+        <strong>October 2023</strong>
+        Kerala, India
+      </div>
+
+      <div class="event-content">
+
+        <div class="event-type">
+          International Conference
+        </div>
+
+        <h2>
+          International Conference on Class Groups of Number Fields
+          and Related Topics
+        </h2>
+
+        <p>
+          Kerala School of Mathematics (KSoM), Kerala, India
+        </p>
+
+      </div>
+
+    </article>
+
+  </section>
+
+
+  <!-- CLOSING NOTE -->
+
+  <section class="events-note">
+
+    <div class="section-label">
+      ACADEMIC JOURNEY
+    </div>
+
+    <p>
+      This page will grow with future conferences, research programmes,
+      workshops, and other mathematical events as they become part of
+      my academic journey.
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <span>
+      Ankita Das · Mathematics
+    </span>
+
+    <span>
+      <a href="cv.html">CV</a> · 2026
+    </span>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
