@@ -1,12 +1,391 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Talks & Slides — Ankita Das</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="container header-inner"><div><a class="name" href="index.html">Ankita Das</a><div class="affiliation">PhD Research Scholar in Mathematics · SRM University AP</div></div><nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="talks.html">Talks &amp; Slides</a><a href="notes.html">Notes</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="beyond.html">Beyond Mathematics</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-</nav></div></header>
-<main class="container">
-<div class="page-intro"><h1>Talks &amp; Slides</h1><p>Conference talks, seminars, invited presentations, and presentation slides.</p></div>
-<section class="content"><div class="two-col"><div class="side-label">Presentations</div><div>
-<div class="publication"><div class="publication-title">Presentation archive</div><div class="meta">Slides will be added as presentations are given.</div><p>Each entry can include the title of the talk, venue, date, location, a short description, and a PDF of the slides.</p></div>
-<div class="publication"><div class="publication-title">Future presentation</div><div class="meta">Details to be added</div><p>Once a presentation is confirmed, the title and event information can be listed here together with the slides.</p></div>
-</div></div></section>
-<section class="content"><div class="two-col"><div class="side-label">Slides</div><div><p>The site is prepared to host PDF slide decks locally, so you can upload a presentation and have it appear as a direct <strong>View slides</strong> or <strong>Download PDF</strong> link.</p></div></div></section>
-</main><footer><div class="container footer-inner"><span>Ankita Das · Mathematics</span><span><a href="cv.html">CV</a> · 2026</span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Research talks and presentation slides by Ankita Das.">
+
+  <title>Talks &amp; Slides — Ankita Das</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Talks page — compact academic layout */
+
+    .talks-page .page-intro {
+      padding-bottom: 38px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .talks-page .page-intro h1 {
+      margin-bottom: 14px;
+    }
+
+    .talks-page .page-intro p {
+      max-width: 760px;
+      margin: 0;
+    }
+
+    .talks-section {
+      padding: 38px 0 20px;
+    }
+
+    .section-label {
+      margin-bottom: 20px;
+    }
+
+    .talk {
+      display: grid;
+      grid-template-columns: 175px 1fr;
+      gap: 35px;
+      padding: 24px 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .talk:first-of-type {
+      border-top: 1px solid var(--ink);
+    }
+
+    .talk-meta {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .talk-meta strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .talk-content h2 {
+      margin: 0 0 9px;
+      font-size: 22px;
+      line-height: 1.35;
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-weight: 400;
+    }
+
+    .talk-content p {
+      margin: 0 0 13px;
+      max-width: 760px;
+    }
+
+    .talk-links {
+      margin-top: 10px;
+    }
+
+    .talk-links a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid var(--link);
+      padding-bottom: 2px;
+      font-size: 14px;
+    }
+
+    .talk-links a:hover {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .closing-note {
+      padding: 28px 0 45px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .closing-note p {
+      max-width: 760px;
+      margin: 0;
+    }
+
+    @media (max-width: 760px) {
+
+      .talk {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .talks-section {
+        padding-top: 30px;
+      }
+
+      .talk {
+        padding: 22px 0;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+<header>
+  <div class="container header-inner">
+
+    <div>
+      <a class="name" href="index.html">Ankita Das</a>
+
+      <div class="affiliation">
+        PhD Research Scholar in Mathematics · SRM University AP
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="talks.html" class="current">Talks &amp; Slides</a>
+      <a href="notes.html">Notes</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="beyond.html">Beyond Mathematics</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main class="container talks-page">
+
+  <!-- INTRODUCTION -->
+
+  <section class="page-intro">
+
+    <div class="label">TALKS &amp; SLIDES</div>
+
+    <h1>
+      Research talks<br>
+      and mathematical presentations.
+    </h1>
+
+    <p>
+      A selection of research and mathematical presentations on topics in
+      algebraic number theory, Diophantine equations, algebraic geometry,
+      and related areas.
+    </p>
+
+  </section>
+
+
+  <!-- PRESENTATIONS -->
+
+  <section class="talks-section">
+
+    <div class="section-label">
+      RESEARCH TALKS
+    </div>
+
+
+    <!-- 2026 -->
+
+    <article class="talk">
+
+      <div class="talk-meta">
+        <strong>June 2026</strong>
+        SRM University AP<br>
+        India
+      </div>
+
+      <div class="talk-content">
+
+        <h2>
+          On Jacobian on a Family of Superelliptic Curves
+        </h2>
+
+        <p>
+          Research Talk
+        </p>
+
+        <div class="talk-links">
+          <a href="https://drive.google.com/file/d/1lvwSfrl7jE-k-ZNXUjwckJ3xArooIjCm/view?usp=drive_link"
+             target="_blank"
+             rel="noopener">
+            Slides
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- DECEMBER 2025 — SRM -->
+
+    <article class="talk">
+
+      <div class="talk-meta">
+        <strong>December 2025</strong>
+        SRM University AP<br>
+        India
+      </div>
+
+      <div class="talk-content">
+
+        <h2>
+          Solvability Problems in Diophantine Equations via the Arithmetic
+          of Elliptic and Superelliptic Curves
+        </h2>
+
+        <p>
+          Research Talk
+        </p>
+
+        <div class="talk-links">
+          <a href="https://drive.google.com/file/d/1nq56pQEbzHCpuFzFdTPHHOibFv4wzvHf/view?usp=drivesdk"
+             target="_blank"
+             rel="noopener">
+            Slides
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- DECEMBER 2025 — JAPAN -->
+
+    <article class="talk">
+
+      <div class="talk-meta">
+        <strong>December 2025</strong>
+        Sakura Science Program<br>
+        Shimane University<br>
+        Japan
+      </div>
+
+      <div class="talk-content">
+
+        <h2>
+          From Fruits to Class Groups
+        </h2>
+
+        <p>
+          Research Talk
+        </p>
+
+        <div class="talk-links">
+          <a href="https://drive.google.com/file/d/16ayXCVwTSfUipIeFV88a9r4S6PWTVU_Q/view?usp=drivesdk"
+             target="_blank"
+             rel="noopener">
+            Slides
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- JUNE 2025 -->
+
+    <article class="talk">
+
+      <div class="talk-meta">
+        <strong>June 2025</strong>
+        IISER Thiruvananthapuram<br>
+        India
+      </div>
+
+      <div class="talk-content">
+
+        <h2>
+          Zariski–Nagata Theorem: A Few Consequences
+        </h2>
+
+        <p>
+          Research Talk
+        </p>
+
+        <div class="talk-links">
+          <a href="https://drive.google.com/file/d/1mKtPXQp_n2EJIdaNx6fh-ftqd4r_NaHI/view?usp=sharing"
+             target="_blank"
+             rel="noopener">
+            Slides
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- OCTOBER 2024 -->
+
+    <article class="talk">
+
+      <div class="talk-meta">
+        <strong>October 2024</strong>
+        IISER Thiruvananthapuram<br>
+        India
+      </div>
+
+      <div class="talk-content">
+
+        <h2>
+          Factorization of Sine and Cosine Functions and Proof of Wallis' Formula
+        </h2>
+
+        <p>
+          Research Talk
+        </p>
+
+        <div class="talk-links">
+          <a href="https://drive.google.com/file/d/1EK-sXOJ0REoSGXfnHoqfGao__CXsdR4g/view?usp=drive_link"
+             target="_blank"
+             rel="noopener">
+            Slides
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+
+  </section>
+
+
+  <!-- CLOSING -->
+
+  <section class="closing-note">
+
+    <div class="section-label">
+      PRESENTATION ARCHIVE
+    </div>
+
+    <p>
+      This page collects selected research talks and mathematical
+      presentations. New talks and slides will be added as they become
+      available.
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <span>
+      Ankita Das · Mathematics
+    </span>
+
+    <span>
+      <a href="cv.html">CV</a> · 2026
+    </span>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
