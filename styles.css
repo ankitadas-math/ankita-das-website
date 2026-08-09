@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap');
+:root{--ink:#293036;--muted:#6d7374;--rule:#d8d9d6;--link:#6d3440;--paper:#f8f7f3;--white:#fcfcfa;--sage:#e7eeea;--blue:#e9eff2;--gold:#b49b68}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.72 "DM Sans",Arial,sans-serif}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:1080px;margin:auto;padding:0 30px}
+header{border-bottom:1px solid var(--rule);background:rgba(248,247,243,.95);padding:25px 0 18px}
+.header-inner{display:flex;justify-content:space-between;align-items:flex-end;gap:35px}.name{font:700 30px "Libre Baskerville",Georgia,serif;color:var(--ink)}.affiliation{font-size:12px;color:var(--muted);margin-top:3px}
+nav{display:flex;gap:20px;flex-wrap:wrap;font-size:12px}nav a{color:var(--ink)}nav a:hover{color:var(--link)}
+main{padding-bottom:45px}.home-intro{padding:68px 0 55px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:1.15fr .85fr;gap:70px;position:relative}
+.home-intro h1{font:400 45px/1.22 "Libre Baskerville",Georgia,serif;letter-spacing:-.025em;margin:0 0 20px}.home-intro p{font-size:16px;max-width:700px}
+.current{border-left:2px solid var(--link);padding:17px 22px;background:rgba(231,238,234,.6);align-self:center}.current .label{color:var(--link)}.current p{font:400 19px/1.45 "Libre Baskerville",Georgia,serif;margin:0}
+.label,.side-label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:9px}
+.home-intro:before{content:"";position:absolute;width:170px;height:170px;border:1px solid rgba(109,52,64,.12);border-radius:50%;right:25px;top:28px;z-index:-1}
+.home-intro:after{content:"";position:absolute;width:95px;height:95px;border:1px solid rgba(48,80,95,.12);border-radius:50%;right:65px;top:65px;z-index:-1}
+.profile-photo,.photo-placeholder{width:235px;height:295px;object-fit:cover;background:var(--white);border:1px solid var(--rule);display:block}
+.home-section{padding:43px 0;border-bottom:1px solid var(--rule)}.home-section-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px}.home-section h2,.page-title{font:400 27px "Libre Baskerville",Georgia,serif;margin:0 0 19px}.more{font-size:11px}
+.research-preview{display:grid;grid-template-columns:1fr 1fr;gap:30px}.research-preview article{padding:17px 0;border-top:2px solid var(--ink)}.research-preview h3{font:400 20px "Libre Baskerville",Georgia,serif;margin:0 0 7px}.research-preview p{margin:0;color:#555}
+.latest-list{display:grid;grid-template-columns:1fr 1fr;gap:30px}.latest-item{padding-top:15px;border-top:1px solid var(--rule)}.latest-item h3,.note-preview h3{font:400 20px "Libre Baskerville",Georgia,serif;margin:4px 0}.meta{font-size:12px;color:var(--muted)}.note-preview{background:var(--blue);padding:23px}
+.page-intro{padding:57px 0 36px;border-bottom:1px solid var(--rule)}.page-intro h1{font:400 44px "Libre Baskerville",Georgia,serif;margin:0 0 10px}.page-intro p{max-width:720px;font-size:16px}
+.content{padding:43px 0}.two-col{display:grid;grid-template-columns:175px 1fr;gap:45px}.side-label{padding-top:6px}
+.content h2{font:400 27px "Libre Baskerville",Georgia,serif;margin:0 0 14px}.content h3{font:400 20px "Libre Baskerville",Georgia,serif;margin:0 0 6px}.block{padding:0 0 35px;margin-bottom:35px;border-bottom:1px solid var(--rule)}.block:last-child{border-bottom:0}
+.math-box{position:relative;overflow:hidden;background:var(--white);border:1px solid var(--rule);padding:26px;margin:23px 0;font:22px "Libre Baskerville",Georgia,serif;text-align:center}.math-caption{text-align:center;font-size:11px;color:var(--muted);margin-top:-13px}
+.math-svg{width:100%;height:auto;display:block;margin:24px 0;background:var(--white);border:1px solid var(--rule)}
+.publication{padding:16px 0 27px;border-bottom:1px solid var(--rule)}.publication:last-child{border-bottom:0}.publication-title{font:400 20px/1.35 "Libre Baskerville",Georgia,serif}.links{display:flex;gap:15px;margin-top:7px;font-size:12px}
+.event{display:grid;grid-template-columns:125px 1fr;gap:22px;padding:16px 0;border-top:1px solid var(--rule)}.event:first-child{border-top:0;padding-top:0}.event-date{font-size:12px;color:var(--muted)}
+.note{padding:21px 0;border-bottom:1px solid var(--rule)}.note h3{font-size:23px}.note .meta{margin-bottom:8px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px}.quiet-box{background:var(--sage);padding:24px}
+.beyond-item{padding:24px 0;border-top:1px solid var(--rule)}.beyond-item:first-child{border-top:0}.beyond-item h3{font:400 23px "Libre Baskerville",Georgia,serif;margin:0 0 5px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gallery-frame{aspect-ratio:4/3;background:var(--white);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;color:var(--muted);font:16px "Libre Baskerville",Georgia,serif;text-align:center;padding:20px}.gallery-caption{font-size:12px;color:var(--muted);margin-top:7px}
+.cv-button{display:inline-block;border:1px solid #aaa;padding:7px 13px;font-size:12px;color:var(--ink)}.cv-button:hover{background:var(--white);text-decoration:none}
+footer{border-top:1px solid var(--rule);padding:25px 0;color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between}
+@media(max-width:760px){.container{padding:0 20px}.header-inner{display:block}.header-inner nav{margin-top:16px;gap:13px}.home-intro{grid-template-columns:1fr;gap:32px}.profile-photo,.photo-placeholder{width:210px;height:270px}.research-preview,.latest-list,.about-grid,.gallery-grid{grid-template-columns:1fr}.two-col{grid-template-columns:1fr;gap:8px}.event{grid-template-columns:1fr;gap:2px}.footer-inner{display:block}.home-intro h1,.page-intro h1{font-size:36px}}
+
+.file-link{display:inline-flex;align-items:center;gap:7px;border-bottom:1px solid var(--link);font-size:12px;padding-bottom:2px}.file-link:before{content:"PDF";font:600 9px "DM Sans",sans-serif;letter-spacing:.06em;color:var(--link)}
+.academic-entry{padding:18px 0;border-bottom:1px solid var(--rule)}.academic-entry:last-child{border-bottom:0}.academic-entry h3{font:400 21px "Libre Baskerville",Georgia,serif;margin:0 0 5px}.academic-entry .meta{margin-bottom:8px}
