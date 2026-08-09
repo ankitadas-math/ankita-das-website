@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220">
+<rect width="900" height="220" fill="#fcfcfa"/>
+<g font-family="Georgia,serif" fill="#293036"><text x="120" y="112" font-size="31">C</text><text x="700" y="112" font-size="31">J(C)</text></g>
+<g stroke="#6d3440" stroke-width="1.6" fill="none"><path d="M175 100 C330 40 560 40 700 100"/><path d="M175 120 C330 180 560 180 700 120"/></g>
+<path d="M690 93l12 7-12 7" fill="none" stroke="#6d3440" stroke-width="1.6"/>
+<text x="390" y="102" font-family="Arial,sans-serif" font-size="13" fill="#6d7374">divisor classes</text>
+</svg>
