@@ -1,6 +1,259 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact — Ankita Das</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="container header-inner"><div><a class="name" href="index.html">Ankita Das</a><div class="affiliation">PhD Research Scholar in Mathematics · SRM University AP</div></div><nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="talks.html">Talks &amp; Slides</a><a href="notes.html">Notes</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="beyond.html">Beyond Mathematics</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-</nav></div></header>
-<main class="container"><div class="page-intro"><h1>Contact</h1><p>For research discussions, academic collaborations, conferences, and related enquiries.</p></div>
-<section class="content"><div class="two-col"><div class="side-label">Email</div><div><p>Contact information will be added here from the approved academic profile before public deployment.</p><a class="cv-button" href="cv.html">View CV</a></div></div></section></main><footer><div class="container footer-inner"><span>Ankita Das · Mathematics</span><span><a href="cv.html">CV</a> · 2026</span></div></footer></body></html>
+```html
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Ankita Das</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.contact-page .page-intro {
+  padding-bottom: 42px;
+}
+
+.contact-section {
+  border-top: 1px solid var(--rule);
+  padding: 42px 0 48px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.contact-label {
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 5px;
+}
+
+.contact-content {
+  max-width: 760px;
+}
+
+.contact-content h2 {
+  margin: 0 0 22px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.contact-item {
+  margin-bottom: 22px;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-item .label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.contact-item a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(128, 58, 70, .35);
+  padding-bottom: 2px;
+}
+
+.contact-item a:hover {
+  border-bottom-color: var(--link);
+}
+
+.contact-item.primary a {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.contact-item.secondary a {
+  font-size: 16px;
+}
+
+.profile-link {
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.affiliation-block p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.affiliation-block strong {
+  font-weight: 500;
+}
+
+.contact-cv {
+  margin-top: 32px;
+}
+
+@media (max-width: 760px) {
+  .contact-page .page-intro {
+    padding-bottom: 32px;
+  }
+
+  .contact-section {
+    padding: 32px 0 38px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-label {
+    padding-top: 0;
+  }
+
+  .contact-content h2 {
+    font-size: 22px;
+  }
+
+  .contact-item.primary a {
+    font-size: 17px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+
+    <div>
+      <a class="name" href="index.html">Ankita Das</a>
+      <div class="affiliation">
+        PhD Research Scholar in Mathematics · SRM University AP
+      </div>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="talks.html">Talks &amp; Slides</a>
+      <a href="notes.html">Notes</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="beyond.html">Beyond Mathematics</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="current">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<main class="container contact-page">
+
+  <div class="page-intro">
+    <h1>Contact</h1>
+    <p>
+      For research discussions, academic collaborations, conferences,
+      and related enquiries.
+    </p>
+  </div>
+
+  <section class="contact-section">
+
+    <div class="contact-grid">
+
+      <div class="contact-label">Email</div>
+
+      <div class="contact-content">
+
+        <div class="contact-item primary">
+          <span class="label">Official academic email</span>
+          <a href="mailto:ankita_das@srmap.edu.in">
+            ankita_das@srmap.edu.in
+          </a>
+        </div>
+
+        <div class="contact-item secondary">
+          <span class="label">Personal email</span>
+          <a href="mailto:dankita993@gmail.com">
+            dankita993@gmail.com
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contact-section">
+
+    <div class="contact-grid">
+
+      <div class="contact-label">Academic profile</div>
+
+      <div class="contact-content">
+
+        <div class="contact-item">
+          <span class="label">Google Scholar</span>
+          <a
+            class="profile-link"
+            href="https://scholar.google.co.in/citations?hl=en&view_op=list_works&gmla=AO4B3jt9h3HGnddmhMpT61zGtIp7ob3BOy5n-jAvRFUEPWVIEjkuZjdCfZHHYA_nAQDQ4bTpWdCp8_a1ReGea8D48vl7&user=byAYCXcAAAAJ#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Scholar profile
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contact-section">
+
+    <div class="contact-grid">
+
+      <div class="contact-label">Affiliation</div>
+
+      <div class="contact-content affiliation-block">
+
+        <p>
+          <strong>PhD Research Scholar in Mathematics</strong><br>
+          SRM University–AP<br>
+          School of Engineering and Sciences<br>
+          Amaravati, Andhra Pradesh, India
+        </p>
+
+        <div class="contact-cv">
+          <a class="cv-button" href="cv.html">View CV</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>Ankita Das · Mathematics</span>
+    <span><a href="cv.html">CV</a> · 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
+```
