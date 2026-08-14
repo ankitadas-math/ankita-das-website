@@ -1,14 +1,882 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beyond Mathematics — Ankita Das</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="container header-inner"><div><a class="name" href="index.html">Ankita Das</a><div class="affiliation">PhD Research Scholar in Mathematics · SRM University AP</div></div><nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="talks.html">Talks &amp; Slides</a><a href="notes.html">Notes</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="beyond.html">Beyond Mathematics</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-</nav></div></header>
-<main class="container">
-<div class="page-intro"><h1>Beyond Mathematics</h1><p>A personal space for the interests, hobbies, places, activities, and experiences that exist alongside academic life.</p></div>
-<section class="content"><div class="two-col"><div class="side-label">Personal</div><div class="beyond-list">
-<div class="beyond-item"><h3>Travel</h3><p>Places, trips, and experiences outside conferences and research visits.</p></div>
-<div class="beyond-item"><h3>Photography</h3><p>A space for photographs and visual memories that are not part of the academic gallery.</p></div>
-<div class="beyond-item"><h3>Reading & interests</h3><p>Books, ideas, and subjects I enjoy outside mathematics.</p></div>
-<div class="beyond-item"><h3>Other activities</h3><p>This section can grow naturally with your hobbies and interests. Nothing needs to be formal or academic here.</p></div>
-</div></div></section>
-<section class="content"><div class="two-col"><div class="side-label">A note</div><div><p>This page will remain deliberately personal and informal, so it can develop over time without feeling like another part of an academic CV.</p></div></div></section>
-</main><footer><div class="container footer-inner"><span>Ankita Das · Mathematics</span><span><a href="cv.html">CV</a> · 2026</span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Life, interests, hobbies, and activities beyond mathematics — Ankita Das.">
+
+  <title>Beyond Mathematics — Ankita Das</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    /* ========================================
+       BEYOND MATHEMATICS
+       ======================================== */
+
+    .beyond-page .page-intro {
+      padding: 62px 0 42px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .beyond-page .page-intro h1 {
+      margin: 0 0 18px;
+      max-width: 850px;
+    }
+
+    .beyond-page .page-intro p {
+      max-width: 780px;
+      margin: 0;
+    }
+
+
+    /* ========================================
+       GENERAL SECTIONS
+       ======================================== */
+
+    .beyond-section {
+      padding: 52px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .beyond-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section-number {
+      margin-bottom: 12px;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .beyond-section h2 {
+      margin: 0 0 18px;
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 28px;
+      line-height: 1.35;
+      font-weight: 400;
+    }
+
+    .beyond-section p {
+      max-width: 780px;
+      margin: 0 0 18px;
+    }
+
+    .beyond-section p:last-child {
+      margin-bottom: 0;
+    }
+
+
+    /* ========================================
+       PHOTO PLACEHOLDERS
+       ======================================== */
+
+    .photo-placeholder {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: rgba(128, 58, 70, 0.025);
+      border: 1px solid var(--rule);
+      color: var(--muted);
+    }
+
+    .photo-placeholder::after {
+      content: "Photograph";
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      opacity: .65;
+    }
+
+    .photo-large {
+      width: 100%;
+      min-height: 360px;
+      margin: 28px 0 30px;
+    }
+
+    .photo-medium {
+      min-height: 245px;
+    }
+
+    .photo-small {
+      min-height: 190px;
+    }
+
+
+    /* ========================================
+       MUSIC
+       ======================================== */
+
+    .music-gallery {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .music-gallery .photo-large {
+      min-height: 390px;
+      margin: 0;
+    }
+
+
+    /* ========================================
+       RECITATION
+       ======================================== */
+
+    .recitation-feature {
+      margin-top: 28px;
+    }
+
+    .recitation-feature .photo-large {
+      margin: 0 0 18px;
+      min-height: 390px;
+    }
+
+    .recitation-small {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+
+    /* ========================================
+       BOOKS & WRITING
+       ======================================== */
+
+    .books-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .books-gallery .photo-feature {
+      grid-column: 1 / -1;
+      min-height: 260px;
+    }
+
+
+    /* ========================================
+       SPEAKING & DEBATE
+       ======================================== */
+
+    .speaking-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .speaking-layout .photo-placeholder {
+      min-height: 250px;
+    }
+
+
+    /* ========================================
+       HIGHLIGHTED FACTS
+       ======================================== */
+
+    .highlight-line {
+      margin-top: 24px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .highlight-line strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+
+    /* ========================================
+       AWARDS & SCHOLARSHIPS
+       ======================================== */
+
+    .awards-list {
+      margin-top: 28px;
+    }
+
+    .award {
+      display: grid;
+      grid-template-columns: 125px 1fr;
+      gap: 30px;
+      padding: 22px 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .award:first-child {
+      border-top: 1px solid var(--ink);
+    }
+
+    .award-year {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .award-content h3 {
+      margin: 0 0 5px;
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 20px;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+
+    .award-content p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .award-photos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .award-photos .photo-placeholder {
+      min-height: 230px;
+    }
+
+
+    /* ========================================
+       LIFE BEYOND ACADEMIA
+       ======================================== */
+
+    .life-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1fr;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .life-gallery .photo-placeholder {
+      min-height: 230px;
+    }
+
+    .life-gallery .photo-large {
+      min-height: 330px;
+      margin: 0;
+    }
+
+    .life-gallery .wide {
+      grid-column: 1 / 3;
+    }
+
+
+    /* ========================================
+       RESPONSIVE
+       ======================================== */
+
+    @media (max-width: 760px) {
+
+      .beyond-page .page-intro {
+        padding: 45px 0 32px;
+      }
+
+      .beyond-section {
+        padding: 40px 0;
+      }
+
+      .beyond-section h2 {
+        font-size: 24px;
+      }
+
+      .music-gallery,
+      .recitation-small,
+      .books-gallery,
+      .speaking-layout,
+      .award-photos,
+      .life-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .books-gallery .photo-feature,
+      .life-gallery .wide {
+        grid-column: auto;
+      }
+
+      .photo-large,
+      .music-gallery .photo-large,
+      .recitation-feature .photo-large {
+        min-height: 280px;
+      }
+
+      .award {
+        grid-template-columns: 1fr;
+        gap: 7px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="container header-inner">
+
+    <div>
+
+      <a class="name" href="index.html">
+        Ankita Das
+      </a>
+
+      <div class="affiliation">
+        PhD Research Scholar in Mathematics · SRM University AP
+      </div>
+
+    </div>
+
+
+    <nav aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="talks.html">Talks &amp; Slides</a>
+      <a href="notes.html">Notes</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="beyond.html" class="current">
+        Beyond Mathematics
+      </a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main class="container beyond-page">
+
+
+  <!-- ========================================
+       INTRODUCTION
+       ======================================== -->
+
+  <section class="page-intro">
+
+    <div class="label">
+      BEYOND MATHEMATICS
+    </div>
+
+    <h1>
+      A little of life<br>
+      outside mathematics.
+    </h1>
+
+    <p>
+      Mathematics occupies a large part of my life, but certainly not all of it.
+      Outside research, I enjoy books, music, recitation, writing, conversation,
+      and the many little experiences that make life interesting.
+    </p>
+
+  </section>
+
+
+  <!-- ========================================
+       MUSIC
+       ======================================== -->
+
+  <section class="beyond-section">
+
+    <div class="section-number">
+      01 · Music
+    </div>
+
+    <h2>
+      Music
+    </h2>
+
+    <p>
+      Music has been part of my life since I was very young. My mother
+      introduced me to music, and at the age of four I began playing my
+      first instrument, the harmonium. I started formal training when I
+      was six and went on to learn both Hindustani Classical Music and
+      Rabindrasangeet for almost ten years.
+    </p>
+
+    <p>
+      Although the formal training eventually came to an end, my love
+      for music certainly did not. The patterns, intrinsic rhythms, and
+      beauty of Indian ragas have remained a constant part of my life.
+      Rabindrasangeet, in particular, has always felt like a kind of
+      medicine to me.
+    </p>
+
+
+    <div class="music-gallery">
+
+      <div class="photo-placeholder photo-large"
+           aria-label="Music photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder photo-medium"
+           aria-label="Music or harmonium photograph placeholder">
+      </div>
+
+    </div>
+
+
+    <div class="highlight-line">
+      <strong>Musical background:</strong>
+      Hindustani Classical Music · Rabindrasangeet · Harmonium
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       RECITATION & PERFORMANCE
+       ======================================== -->
+
+  <section class="beyond-section">
+
+    <div class="section-number">
+      02 · Recitation &amp; Performance
+    </div>
+
+    <h2>
+      Recitation &amp; Performance
+    </h2>
+
+    <p>
+      Recitation has been one of the earliest and most enduring forms
+      of expression in my life. I made my first stage appearance at
+      just two and a half, in a local recitation competition. My parents
+      noticed that I had a natural inclination towards recitation and
+      storytelling and decided to introduce me to professional training.
+      I fell in love with it almost immediately, and that love has stayed
+      with me ever since.
+    </p>
+
+    <p>
+      At the age of eight, after an audition, I was invited to perform
+      as a child artist for All India Radio. During my school years,
+      I participated in inter-school recitation competitions, performed
+      at almost every school event, and gradually found myself anchoring
+      and hosting many of them as well.
+    </p>
+
+    <p>
+      I later received formal training in recitation under Bangiya
+      Sangeet Parishad. The course involved seven years of rigorous
+      training, culminating in the title of Visharad in Recitation,
+      which I was fortunate to earn. Even today, recitation remains
+      one of the things that gives me immense pleasure.
+    </p>
+
+
+    <div class="recitation-feature">
+
+      <div class="photo-placeholder photo-large"
+           aria-label="Recitation performance photograph placeholder">
+      </div>
+
+      <div class="recitation-small">
+
+        <div class="photo-placeholder photo-small"
+             aria-label="Childhood recitation photograph placeholder">
+        </div>
+
+        <div class="photo-placeholder photo-small"
+             aria-label="Stage or recitation photograph placeholder">
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="highlight-line">
+      <strong>Recitation:</strong>
+      Visharad · State &amp; National-level competitions ·
+      AIR Child Recitation Artist
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       WORDS, STORIES & BOOKS
+       ======================================== -->
+
+  <section class="beyond-section">
+
+    <div class="section-number">
+      03 · Words, Stories &amp; Books
+    </div>
+
+    <h2>
+      Words, Stories &amp; Books
+    </h2>
+
+    <p>
+      Books have always been my best friends. Whenever I feel low,
+      I reach for a book and curl up on my couch. Reading has always
+      been my comfort zone, and if you ever want to give me a gift,
+      a book is probably the easiest choice.
+    </p>
+
+    <p>
+      My love for reading naturally grew into a love for writing.
+      I usually write in Bengali, my mother tongue, and writing has
+      remained a quiet part of my life ever since. I still write
+      whenever I feel overwhelmed by the thoughts in my head —
+      putting them into words somehow makes them lighter.
+    </p>
+
+    <p>
+      One of my most memorable experiences with writing came when I
+      won the national essay-writing competition organised by Tata
+      Building India on <em>“Eradication of Poverty”</em> in Bengali
+      and was felicitated by the then President of India,
+      Pranab Mukherjee, in 2014.
+    </p>
+
+    <p>
+      I continue to write today. Sometimes it is poetry, sometimes
+      prose, and sometimes simply a page full of thoughts. It is one
+      of the simplest ways I know to quieten my mind.
+    </p>
+
+
+    <div class="books-gallery">
+
+      <div class="photo-placeholder photo-feature"
+           aria-label="Books or reading photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder photo-medium"
+           aria-label="Writing photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder photo-medium"
+           aria-label="Books or personal writing photograph placeholder">
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       SPEAKING & DEBATE
+       ======================================== -->
+
+  <section class="beyond-section">
+
+    <div class="section-number">
+      04 · Speaking &amp; Debate
+    </div>
+
+    <h2>
+      Speaking &amp; Debate
+    </h2>
+
+    <p>
+      What I love most about spontaneous debate is its rawness. There
+      is no time to decorate an argument with carefully selected
+      quotations or neatly arranged facts. You have to speak from
+      what you genuinely think at that particular moment. For me,
+      that is what makes debate so interesting: it helps me form a
+      clearer viewpoint on a subject, but it also helps me understand
+      myself a little better.
+    </p>
+
+    <p>
+      During school, we had a house system with four houses, and I
+      was the captain of Laxmibai House, named after the Rani of Jhansi.
+      I regularly represented my house in inter-house debate competitions.
+    </p>
+
+    <p>
+      Public speaking has been another constant in my life. Throughout
+      school, I was closely involved in organising events and frequently
+      anchored cultural programmes. I still enjoy hosting and speaking
+      in front of an audience. Public speaking gives my thoughts a
+      channel — a way to take something that exists inside my head
+      and share it with a much larger audience.
+    </p>
+
+
+    <div class="speaking-layout">
+
+      <div class="photo-placeholder"
+           aria-label="Anchoring or hosting photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder"
+           aria-label="Debate or school photograph placeholder">
+      </div>
+
+    </div>
+
+
+    <div class="highlight-line">
+      <strong>Debate:</strong>
+      District-level competitions · Inter-house debates
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       AWARDS & SCHOLARSHIPS
+       ======================================== -->
+
+  <section class="beyond-section">
+
+    <div class="section-number">
+      05 · Awards &amp; Scholarships
+    </div>
+
+    <h2>
+      Awards &amp; Scholarships
+    </h2>
+
+    <p>
+      A few recognitions and scholarships that have been meaningful
+      milestones along my academic journey.
+    </p>
+
+
+    <div class="awards-list">
+
+
+      <div class="award">
+
+        <div class="award-year">
+          2025
+        </div>
+
+        <div class="award-content">
+
+          <h3>
+            President Scholastic Award
+          </h3>
+
+          <p>
+            Maintenance Allowance · SRM University AP
+          </p>
+
+          <p>
+            Awarded for securing external government funding.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="award">
+
+        <div class="award-year">
+          2023–Present
+        </div>
+
+        <div class="award-content">
+
+          <h3>
+            Joint CSIR–UGC JRF Fellowship
+          </h3>
+
+          <p>
+            University Grants Commission
+          </p>
+
+          <p>
+            Awarded for qualifying the All India Joint CSIR–UGC NET.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="award">
+
+        <div class="award-year">
+          2021–2022
+        </div>
+
+        <div class="award-content">
+
+          <h3>
+            Indira Gandhi Single Girl Child Scholarship
+          </h3>
+
+          <p>
+            University Grants Commission
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="award">
+
+        <div class="award-year">
+          2017–2022
+        </div>
+
+        <div class="award-content">
+
+          <h3>
+            Bigyani Kanya Medha Britti (BKMB) Scholarship
+          </h3>
+
+          <p>
+            JBNSTS
+          </p>
+
+          <p>
+            Awarded for securing a position among the top 50 female
+            candidates in a state-level examination.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="award">
+
+        <div class="award-year">
+          2017
+        </div>
+
+        <div class="award-content">
+
+          <h3>
+            DST–INSPIRE Scholarship
+          </h3>
+
+          <p>
+            Scholarship for Higher Education (SHE)
+          </p>
+
+          <p>
+            Awarded for securing a position in the top 1% of candidates
+            in the 10+2 state board examination.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="award-photos">
+
+      <div class="photo-placeholder"
+           aria-label="Award or certificate photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder"
+           aria-label="Felicitation or award photograph placeholder">
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       LIFE BEYOND ACADEMIA
+       ======================================== -->
+
+  <section class="beyond-section">
+
+    <div class="section-number">
+      06 · Life Beyond Academia
+    </div>
+
+    <h2>
+      Life Beyond Academia
+    </h2>
+
+    <p>
+      There are always more things to discover outside the work we do.
+      This space will grow with photographs, places, experiences,
+      music, books, and the little things I enjoy along the way.
+    </p>
+
+
+    <div class="life-gallery">
+
+      <div class="photo-placeholder"
+           aria-label="Personal photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder photo-large"
+           aria-label="Personal feature photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder"
+           aria-label="Personal photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder wide"
+           aria-label="Personal wide photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder"
+           aria-label="Personal photograph placeholder">
+      </div>
+
+      <div class="photo-placeholder"
+           aria-label="Personal photograph placeholder">
+      </div>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <span>
+      Ankita Das · Mathematics
+    </span>
+
+    <span>
+      <a href="cv.html">CV</a> · 2026
+    </span>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
