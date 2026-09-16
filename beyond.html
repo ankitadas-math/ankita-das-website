@@ -204,7 +204,70 @@
             height: 300px;
         }
 
+        /* =========================================
+   WORDS, STORIES & BOOKS GALLERY
+========================================= */
 
+.words-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.words-photo {
+    margin: 0;
+}
+
+.words-photo img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+}
+
+.words-photo:first-child img {
+    object-fit: contain;
+    background: #f7f7f5;
+}
+
+.words-photo figcaption {
+    padding-top: 10px;
+}
+
+.words-photo figcaption strong {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.words-photo figcaption span {
+    display: block;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: #888;
+}
+
+
+/* =========================================
+   WORDS GALLERY — MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+    .words-gallery {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .words-photo img {
+        height: auto;
+        max-height: 520px;
+    }
+
+}
         /* =========================================
            RESPONSIVE
         ========================================= */
