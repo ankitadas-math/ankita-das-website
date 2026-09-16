@@ -283,24 +283,32 @@
 }
 
 /* =========================================
-   LIFE BEYOND ACADEMIA — IMAGE
+   LIFE BEYOND ACADEMIA
 ========================================= */
+
+.life-gallery {
+    display: grid;
+    grid-template-columns: minmax(0, 520px);
+    gap: 26px;
+    margin-top: 34px;
+    align-items: start;
+}
 
 .life-photo {
     margin: 0;
-    overflow: hidden;
+    padding: 0;
 }
 
 .life-photo img {
+    display: block;
     width: 100%;
     height: auto;
-    max-height: 430px;
     object-fit: contain;
-    display: block;
 }
 
 .life-photo figcaption {
-    padding-top: 9px;
+    margin-top: 10px;
+    padding: 0;
 }
 
 .life-photo figcaption strong {
@@ -308,14 +316,25 @@
     font-size: 0.82rem;
     font-weight: 500;
     color: #333;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 .life-photo figcaption span {
     display: block;
     font-size: 0.72rem;
-    line-height: 1.4;
+    line-height: 1.45;
     color: #888;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .life-gallery {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
 }
         /* =========================================
            RESPONSIVE
@@ -896,11 +915,9 @@
                 </p>
 
 
-                <div class="life-gallery">
+               <div class="life-gallery">
 
-    <!-- Chittipara, Kerala -->
-
-    <figure class="beyond-photo-placeholder tall life-photo">
+    <figure class="life-photo">
 
         <img
             src="assets/chittipara-hilltop.jpg"
@@ -914,33 +931,7 @@
 
     </figure>
 
-
-    <!-- Future photograph -->
-
-    <div class="beyond-photo-placeholder"></div>
-
-
-    <!-- Future photograph -->
-
-    <div class="beyond-photo-placeholder tall"></div>
-
-
-    <!-- Future photograph -->
-
-    <div class="beyond-photo-placeholder"></div>
-
-
-    <!-- Future photograph -->
-
-    <div class="beyond-photo-placeholder"></div>
-
-
-    <!-- Future photograph -->
-
-    <div class="beyond-photo-placeholder"></div>
-
 </div>
-
 
                 <p class="beyond-caption">
                     More photographs and stories will find their place here
