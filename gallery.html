@@ -1,13 +1,375 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gallery — Ankita Das</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="container header-inner"><div><a class="name" href="index.html">Ankita Das</a><div class="affiliation">PhD Research Scholar in Mathematics · SRM University AP</div></div><nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="talks.html">Talks &amp; Slides</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="beyond.html">Beyond Mathematics</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-</nav></div></header>
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Gallery of academic events, conferences, research visits, and moments from the mathematical life of Ankita Das.">
+
+  <title>Gallery — Ankita Das</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+
+  <style>
+
+    /* ========================================
+       GALLERY
+       ======================================== */
+
+    .gallery-section {
+      padding: 10px 0 70px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 42px 28px;
+      width: 100%;
+    }
+
+    .gallery-item {
+      margin: 0;
+      min-width: 0;
+    }
+
+    .gallery-frame {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: #f3f3f1;
+      border: 1px solid #e7e7e4;
+    }
+
+    .gallery-frame img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .gallery-item:hover .gallery-frame img {
+      transform: scale(1.015);
+    }
+
+    .gallery-caption {
+      margin-top: 13px;
+      padding-left: 2px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .gallery-caption strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+
+    /* ========================================
+       FEATURE IMAGE
+       ======================================== */
+
+    .gallery-item.featured {
+      grid-column: 1 / -1;
+    }
+
+    .gallery-item.featured .gallery-frame {
+      aspect-ratio: 16 / 9;
+    }
+
+
+    /* ========================================
+       RESPONSIVE
+       ======================================== */
+
+    @media (max-width: 760px) {
+
+      .gallery-section {
+        padding-bottom: 50px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .gallery-item.featured {
+        grid-column: auto;
+      }
+
+      .gallery-frame,
+      .gallery-item.featured .gallery-frame {
+        aspect-ratio: 4 / 3;
+      }
+
+      .gallery-caption {
+        font-size: 13.5px;
+        line-height: 1.55;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="container header-inner">
+
+    <div>
+
+      <a class="name" href="index.html">
+        Ankita Das
+      </a>
+
+      <div class="affiliation">
+        PhD Research Scholar in Mathematics · SRM University AP
+      </div>
+
+    </div>
+
+
+    <nav aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="talks.html">Talks &amp; Slides</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html" class="current">Gallery</a>
+      <a href="beyond.html">Beyond Mathematics</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
 <main class="container">
-<div class="page-intro"><h1>Gallery</h1><p>Photographs from conferences, seminars, research visits, academic events, and other moments from mathematical life.</p></div>
-<section class="content"><div class="two-col"><div class="side-label">Academic life</div><div class="gallery-grid">
-<figure class="gallery-item"><div class="gallery-frame">Conference<br>photograph</div><figcaption class="gallery-caption">A conference, workshop, or seminar.</figcaption></figure>
-<figure class="gallery-item"><div class="gallery-frame">Research visit<br>photograph</div><figcaption class="gallery-caption">A research visit or academic meeting.</figcaption></figure>
-<figure class="gallery-item"><div class="gallery-frame">Seminar / talk<br>photograph</div><figcaption class="gallery-caption">A presentation, seminar, or department event.</figcaption></figure>
-</div></div></section>
-<section class="content"><div class="two-col"><div class="side-label">Future additions</div><div><p>This page is intentionally prepared as a photo gallery. Once you provide photographs, they can replace these placeholders with captions, dates, event names, and locations.</p></div></div></section>
-</main><footer><div class="container footer-inner"><span>Ankita Das · Mathematics</span><span><a href="cv.html">CV</a> · 2026</span></div></footer></body></html>
+
+
+  <!-- ========================================
+       INTRODUCTION
+       ======================================== -->
+
+  <div class="page-intro">
+
+    <div class="label">
+      GALLERY
+    </div>
+
+    <h1>
+      Moments from<br>
+      academic life.
+    </h1>
+
+    <p>
+      Photographs from conferences, seminars, research visits,
+      academic events, and other moments from my mathematical life.
+    </p>
+
+  </div>
+
+
+  <!-- ========================================
+       ACADEMIC LIFE
+       ======================================== -->
+
+  <section class="gallery-section">
+
+    <div class="two-col">
+
+      <div class="side-label">
+        Academic life
+      </div>
+
+
+      <div class="gallery-grid">
+
+
+        <!-- ==================================
+             PHOTO 1
+        =================================== -->
+
+        <figure class="gallery-item">
+
+          <div class="gallery-frame">
+
+            <img
+              src="assets/research-presentation.jpg"
+              alt="Ankita Das giving a research presentation"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption class="gallery-caption">
+
+            <strong>Research presentation</strong>
+
+            Sharing research and mathematical ideas
+            through an academic presentation.
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- ==================================
+             PHOTO 2
+        =================================== -->
+
+        <figure class="gallery-item">
+
+          <div class="gallery-frame">
+
+            <img
+              src="assets/sakura-science-shimane.jpg"
+              alt="Group photograph during the Sakura Science Program at Shimane University, Japan"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption class="gallery-caption">
+
+            <strong>Sakura Science Program · Shimane University, Japan</strong>
+
+            A group photograph from the Sakura Science Program,
+            December 2025.
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- ==================================
+             PHOTO 3
+        =================================== -->
+
+        <figure class="gallery-item">
+
+          <div class="gallery-frame">
+
+            <img
+              src="assets/icggnfrt-2023.jpg"
+              alt="Ankita Das with fellow participants at ICCGNFRT 2023"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption class="gallery-caption">
+
+            <strong>With fellow participants at ICCGNFRT 2023</strong>
+
+            International Conference on Class Groups of Number Fields
+            and Related Topics, 2023.
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- ==================================
+             PHOTO 4
+        =================================== -->
+
+        <figure class="gallery-item">
+
+          <div class="gallery-frame">
+
+            <img
+              src="assets/frontier-symposium-2025.jpg"
+              alt="Group photograph from Frontier Symposium 2025"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption class="gallery-caption">
+
+            <strong>Frontier Symposium 2025</strong>
+
+            A group photograph from the Frontier Symposium
+            in mathematics.
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- ==================================
+             PHOTO 5
+        =================================== -->
+
+        <figure class="gallery-item">
+
+          <div class="gallery-frame">
+
+            <img
+              src="assets/rms-conference-2026.jpg"
+              alt="Ankita Das with fellow participants at the 41st Annual Conference of RMS 2026"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption class="gallery-caption">
+
+            <strong>With fellow participants at the 41st Annual Conference of RMS 2026</strong>
+
+            41st Annual Conference of the Ramanujan Mathematical
+            Society, 2026.
+
+          </figcaption>
+
+        </figure>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <span>
+      Ankita Das · Mathematics
+    </span>
+
+    <span>
+      <a href="cv.html">CV</a> · 2026
+    </span>
+
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>
