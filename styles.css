@@ -33,3 +33,25 @@ footer{border-top:1px solid var(--rule);padding:25px 0;color:var(--muted);font-s
 
 .file-link{display:inline-flex;align-items:center;gap:7px;border-bottom:1px solid var(--link);font-size:12px;padding-bottom:2px}.file-link:before{content:"PDF";font:600 9px "DM Sans",sans-serif;letter-spacing:.06em;color:var(--link)}
 .academic-entry{padding:18px 0;border-bottom:1px solid var(--rule)}.academic-entry:last-child{border-bottom:0}.academic-entry h3{font:400 21px "Libre Baskerville",Georgia,serif;margin:0 0 5px}.academic-entry .meta{margin-bottom:8px}
+/* Research in Progress */
+
+.research-progress {
+  border-top: 1px solid var(--rule);
+}
+
+.research-progress-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.research-progress-item .meta {
+  margin-bottom: 8px;
+}
+
+.research-progress-item h3 {
+  margin: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 400;
+}
