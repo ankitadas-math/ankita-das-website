@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -109,284 +110,139 @@
 
 
         /* =========================================
-           PHOTO PLACEHOLDERS
+           WORDS, STORIES & BOOKS
         ========================================= */
 
-        .beyond-photo-grid {
+        .words-gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin-top: 25px;
+            gap: 18px;
+            margin-top: 24px;
+            max-width: 780px;
         }
 
-        .beyond-photo-placeholder {
-            height: 190px;
-            border: 1px solid #e3e3e3;
-            background: #fafafa;
-            position: relative;
+        .words-photo {
+            margin: 0;
         }
 
-        .beyond-photo-placeholder::before {
-            content: "";
-            position: absolute;
-            width: 27px;
-            height: 20px;
-            border: 1px solid #d5d5d5;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+        .words-photo img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
         }
 
-        .beyond-photo-placeholder::after {
-            content: "";
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            border: 1px solid #d5d5d5;
-            border-radius: 50%;
-            left: calc(50% + 7px);
-            top: calc(50% - 6px);
-            transform: translate(-50%, -50%);
+        .words-photo:first-child img {
+            object-fit: contain;
+            background: #f7f7f5;
+        }
+
+        .words-photo figcaption {
+            padding-top: 8px;
+        }
+
+        .words-photo figcaption strong {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .words-photo figcaption span {
+            display: block;
+            font-size: 0.72rem;
+            line-height: 1.4;
+            color: #888;
         }
 
 
         /* =========================================
-           AWARDS
+           SPEAKING & DEBATE PHOTOGRAPH
         ========================================= */
 
-        .beyond-awards {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0 45px;
-            margin-top: 10px;
+        .speaking-photo {
+            margin-top: 28px;
+            max-width: 360px;
         }
 
-        .beyond-award {
-            padding: 18px 0;
-            border-bottom: 1px solid #e8e8e8;
+        .speaking-photo figure {
+            margin: 0;
         }
 
-        .beyond-award-year {
-            font-size: 0.75rem;
-            letter-spacing: 0.08em;
+        .speaking-photo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 430px;
+            object-fit: contain;
+        }
+
+        .speaking-photo figcaption {
+            margin-top: 9px;
+        }
+
+        .speaking-photo figcaption strong {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .speaking-photo figcaption span {
+            display: block;
+            font-size: 0.72rem;
+            line-height: 1.45;
             color: #888;
-            margin-bottom: 5px;
-        }
-
-        .beyond-award-title {
-            font-size: 1rem;
-            margin-bottom: 4px;
-        }
-
-        .beyond-award-text {
-            font-size: 0.88rem;
-            color: #777;
-            line-height: 1.55;
         }
 
 
         /* =========================================
-           LIFE GALLERY
+           LIFE BEYOND ACADEMIA
         ========================================= */
 
         .life-gallery {
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr 1fr;
-            gap: 16px;
-            margin-top: 26px;
+            grid-template-columns: minmax(0, 520px);
+            gap: 26px;
+            margin-top: 34px;
+            align-items: start;
         }
 
-        .life-gallery .beyond-photo-placeholder {
-            height: 220px;
+        .life-photo {
+            margin: 0;
+            padding: 0;
         }
 
-        .life-gallery .tall {
-            height: 300px;
+        .life-photo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
         }
 
-       /* =========================================
-   WORDS, STORIES & BOOKS GALLERY
-========================================= */
+        .life-photo figcaption {
+            margin-top: 10px;
+            padding: 0;
+        }
 
-.words-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-top: 24px;
-    max-width: 780px;
-}
+        .life-photo figcaption strong {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 3px;
+        }
 
-.words-photo {
-    margin: 0;
-}
-
-.words-photo img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    display: block;
-}
-
-.words-photo:first-child img {
-    object-fit: contain;
-    background: #f7f7f5;
-}
-
-.words-photo figcaption {
-    padding-top: 8px;
-}
-
-.words-photo figcaption strong {
-    display: block;
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: #333;
-    margin-bottom: 2px;
-}
-
-.words-photo figcaption span {
-    display: block;
-    font-size: 0.72rem;
-    line-height: 1.4;
-    color: #888;
-}
+        .life-photo figcaption span {
+            display: block;
+            font-size: 0.72rem;
+            line-height: 1.45;
+            color: #888;
+        }
 
 
-/* =========================================
-   WORDS GALLERY — MOBILE
-========================================= */
-
-@media (max-width: 760px) {
-
-    .words-gallery {
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-    }
-
-    .words-photo img {
-        height: 220px;
-    }
-
-}
-
-@media (max-width: 500px) {
-
-    .words-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .words-photo img {
-        height: auto;
-        max-height: 420px;
-    }
-
-}
- /* =========================================
-  SPEAKING & DEBATE PHOTOGRAPH
-========================================= */
-    
-
-.speaking-photo {
-    margin-top: 28px;
-    max-width: 360px;
-}
-
-.speaking-photo figure {
-    margin: 0;
-}
-
-.speaking-photo img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 430px;
-    object-fit: contain;
-}
-
-.speaking-photo figcaption {
-    margin-top: 9px;
-}
-
-.speaking-photo figcaption strong {
-    display: block;
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: #333;
-    margin-bottom: 3px;
-}
-
-.speaking-photo figcaption span {
-    display: block;
-    font-size: 0.72rem;
-    line-height: 1.45;
-    color: #888;
-}
-
-
-/* Mobile */
-
-@media (max-width: 760px) {
-
-    .speaking-photo {
-        max-width: 300px;
-    }
-
-}
-
-/* =========================================
-   LIFE BEYOND ACADEMIA
-========================================= */
-
-.life-gallery {
-    display: grid;
-    grid-template-columns: minmax(0, 520px);
-    gap: 26px;
-    margin-top: 34px;
-    align-items: start;
-}
-
-.life-photo {
-    margin: 0;
-    padding: 0;
-}
-
-.life-photo img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.life-photo figcaption {
-    margin-top: 10px;
-    padding: 0;
-}
-
-.life-photo figcaption strong {
-    display: block;
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: #333;
-    margin-bottom: 3px;
-}
-
-.life-photo figcaption span {
-    display: block;
-    font-size: 0.72rem;
-    line-height: 1.45;
-    color: #888;
-}
-
-
-/* Mobile */
-
-@media (max-width: 800px) {
-
-    .life-gallery {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-}
         /* =========================================
            RESPONSIVE
         ========================================= */
@@ -412,22 +268,37 @@
                 max-height: 520px;
             }
 
-            .beyond-awards {
-                grid-template-columns: 1fr;
+            .words-gallery {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
             }
 
-            .beyond-photo-grid {
-                grid-template-columns: 1fr 1fr;
+            .words-photo img {
+                height: 220px;
+            }
+
+            .speaking-photo {
+                max-width: 300px;
             }
 
             .life-gallery {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
+
         }
+
 
         @media (max-width: 500px) {
 
-            .beyond-photo-grid,
+            .words-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .words-photo img {
+                height: auto;
+                max-height: 420px;
+            }
+
             .life-gallery {
                 grid-template-columns: 1fr;
             }
@@ -435,21 +306,28 @@
         }
 
     </style>
+
 </head>
 
 
 <body>
 
 <header>
+
     <div class="container header-inner">
 
         <div>
-            <a class="name" href="index.html">Ankita Das</a>
+
+            <a class="name" href="index.html">
+                Ankita Das
+            </a>
 
             <div class="affiliation">
                 PhD Research Scholar in Mathematics · SRM University AP
             </div>
+
         </div>
+
 
         <nav aria-label="Main navigation">
 
@@ -468,6 +346,7 @@
         </nav>
 
     </div>
+
 </header>
 
 
@@ -508,6 +387,7 @@
             <div class="side-label">
                 01 · Music
             </div>
+
 
             <div class="beyond-feature">
 
@@ -571,6 +451,7 @@
                 02 · Recitation &amp; Performance
             </div>
 
+
             <div>
 
                 <p>
@@ -601,8 +482,6 @@
                     words, rhythm and emotion together.
                 </p>
 
-
-                <!-- TWO JADAVPUR PHOTOGRAPHS -->
 
                 <div class="recitation-gallery">
 
@@ -635,6 +514,7 @@
 
                     </div>
 
+
                 </div>
 
             </div>
@@ -646,111 +526,106 @@
 
 
     <!-- =========================================
-     WORDS, STORIES & BOOKS
-========================================== -->
+         WORDS, STORIES & BOOKS
+    ========================================== -->
 
-<section class="content beyond-section">
+    <section class="content beyond-section">
 
-    <div class="two-col">
+        <div class="two-col">
 
-        <div class="side-label">
-            03 · Words, Stories &amp; Books
-        </div>
-
-        <div>
-
-            <p>
-                As a single child, I naturally grew up around books. My
-                curiosity about reading began with whatever I could find —
-                newspapers, roadside posters, textbooks and, eventually,
-                books of every kind.
-            </p>
-
-            <p>
-                Books have remained my best friends. When I feel low or
-                overwhelmed, one of the easiest things for me to do is
-                pick up a book and curl up on the couch. Reading has always
-                been my comfort zone, and a book remains the easiest gift
-                anyone can give me.
-            </p>
-
-            <p>
-                I also enjoy writing poetry and stories. I write primarily
-                in Bengali, my mother tongue. When my mind is crowded with
-                too many thoughts, writing them down is often the simplest
-                medicine that works for me.
-            </p>
+            <div class="side-label">
+                03 · Words, Stories &amp; Books
+            </div>
 
 
-            <!-- =================================
-                 WRITING & READING PHOTOGRAPHS
-            ================================== -->
+            <div>
 
-            <div class="words-gallery">
+                <p>
+                    As a single child, I naturally grew up around books. My
+                    curiosity about reading began with whatever I could find —
+                    newspapers, roadside posters, textbooks and, eventually,
+                    books of every kind.
+                </p>
 
-                <!-- Bengali handwriting -->
+                <p>
+                    Books have remained my best friends. When I feel low or
+                    overwhelmed, one of the easiest things for me to do is
+                    pick up a book and curl up on the couch. Reading has always
+                    been my comfort zone, and a book remains the easiest gift
+                    anyone can give me.
+                </p>
 
-                <figure class="words-photo">
-
-                    <img
-                        src="assets/bengali-writing.jpg"
-                        alt="A handwritten page of Bengali writing"
-                    >
-
-                    <figcaption>
-                        <strong>Writing</strong>
-                        <span>
-                            A page from my Bengali writing
-                        </span>
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- Reading Ikigai -->
-
-                <figure class="words-photo">
-
-                    <img
-                        src="assets/reading-ikigai.jpg"
-                        alt="Reading a book"
-                    >
-
-                    <figcaption>
-                        <strong>Among books</strong>
-                        <span>
-                            A quiet moment with a book
-                        </span>
-                    </figcaption>
-
-                </figure>
+                <p>
+                    I also enjoy writing poetry and stories. I write primarily
+                    in Bengali, my mother tongue. When my mind is crowded with
+                    too many thoughts, writing them down is often the simplest
+                    medicine that works for me.
+                </p>
 
 
-                <!-- Reading Bengali book -->
+                <div class="words-gallery">
 
-                <figure class="words-photo">
 
-                    <img
-                        src="assets/reading-bengali-book.jpg"
-                        alt="Reading a Bengali book"
-                    >
+                    <figure class="words-photo">
 
-                    <figcaption>
-                        <strong>Reading</strong>
-                        <span>
-                            Books have always been my comfort zone
-                        </span>
-                    </figcaption>
+                        <img
+                            src="assets/bengali-writing.jpg"
+                            alt="A handwritten page of Bengali writing"
+                        >
 
-                </figure>
+                        <figcaption>
+                            <strong>Writing</strong>
+                            <span>
+                                A page from my Bengali writing
+                            </span>
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="words-photo">
+
+                        <img
+                            src="assets/reading-ikigai.jpg"
+                            alt="Reading a book"
+                        >
+
+                        <figcaption>
+                            <strong>Among books</strong>
+                            <span>
+                                A quiet moment with a book
+                            </span>
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="words-photo">
+
+                        <img
+                            src="assets/reading-bengali-book.jpg"
+                            alt="Reading a Bengali book"
+                        >
+
+                        <figcaption>
+                            <strong>Reading</strong>
+                            <span>
+                                Books have always been my comfort zone
+                            </span>
+                        </figcaption>
+
+                    </figure>
+
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+
 
     <!-- =========================================
          SPEAKING & DEBATE
@@ -763,6 +638,7 @@
             <div class="side-label">
                 04 · Speaking &amp; Debate
             </div>
+
 
             <div>
 
@@ -796,143 +672,30 @@
                     beyond the classroom.
                 </p>
 
+
                 <div class="speaking-photo">
 
-    <figure>
+                    <figure>
 
-        <img
-            src="assets/170709.jpg"
-            alt="Speaking at an event during my school years"
-        >
+                        <img
+                            src="assets/170709.jpg"
+                            alt="Speaking at an event during my school years"
+                        >
 
-        <figcaption>
-            <strong>Speaking &amp; Debate</strong>
-            <span>A moment from my early years of public speaking</span>
-        </figcaption>
+                        <figcaption>
+                            <strong>Speaking &amp; Debate</strong>
+                            <span>
+                                A moment from my early years of public speaking
+                            </span>
+                        </figcaption>
 
-    </figure>
-
-</div>
-                
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================================
-         AWARDS & SCHOLARSHIPS
-    ========================================== -->
-
-    <section class="content beyond-section">
-
-        <div class="two-col">
-
-            <div class="side-label">
-                05 · Awards &amp; Scholarships
-            </div>
-
-            <div>
-
-                <div class="beyond-awards">
-
-
-                    <div class="beyond-award">
-
-                        <div class="beyond-award-year">
-                            2025
-                        </div>
-
-                        <div class="beyond-award-title">
-                            President Scholastic Award
-                        </div>
-
-                        <div class="beyond-award-text">
-                            Maintenance Allowance, SRM University–AP,
-                            awarded for securing external government funding.
-                        </div>
-
-                    </div>
-
-
-                    <div class="beyond-award">
-
-                        <div class="beyond-award-year">
-                            2023–Present
-                        </div>
-
-                        <div class="beyond-award-title">
-                            Joint CSIR–UGC JRF Fellowship
-                        </div>
-
-                        <div class="beyond-award-text">
-                            UGC fellowship awarded for qualifying the
-                            All India Joint CSIR–UGC NET.
-                        </div>
-
-                    </div>
-
-
-                    <div class="beyond-award">
-
-                        <div class="beyond-award-year">
-                            2021–2022
-                        </div>
-
-                        <div class="beyond-award-title">
-                            Indira Gandhi Single Girl Child Scholarship
-                        </div>
-
-                        <div class="beyond-award-text">
-                            University Grants Commission (UGC).
-                        </div>
-
-                    </div>
-
-
-                    <div class="beyond-award">
-
-                        <div class="beyond-award-year">
-                            2017–2022
-                        </div>
-
-                        <div class="beyond-award-title">
-                            Bigyani Kanya Medha Britti (BKMB) Scholarship
-                        </div>
-
-                        <div class="beyond-award-text">
-                            JBNSTS scholarship awarded for securing a position
-                            among the top 50 female candidates in a
-                            state-level examination.
-                        </div>
-
-                    </div>
-
-
-                    <div class="beyond-award">
-
-                        <div class="beyond-award-year">
-                            2017
-                        </div>
-
-                        <div class="beyond-award-title">
-                            DST–INSPIRE Scholarship
-                        </div>
-
-                        <div class="beyond-award-text">
-                            Scholarship for Higher Education (SHE), awarded
-                            for securing a position among the top 1% of
-                            candidates in the 10+2 state board examination.
-                        </div>
-
-                    </div>
+                    </figure>
 
                 </div>
 
+            </div>
 
-              </div>
+        </div>
 
     </section>
 
@@ -947,8 +710,9 @@
         <div class="two-col">
 
             <div class="side-label">
-                06 · Life Beyond Academia
+                05 · Life Beyond Academia
             </div>
+
 
             <div>
 
@@ -967,23 +731,26 @@
                 </p>
 
 
-               <div class="life-gallery">
+                <div class="life-gallery">
 
-    <figure class="life-photo">
+                    <figure class="life-photo">
 
-        <img
-            src="assets/chittipara-hilltop.jpg"
-            alt="A quiet moment on a hilltop at Chittipara, Kerala"
-        >
+                        <img
+                            src="assets/chittipara-hilltop.jpg"
+                            alt="A quiet moment on a hilltop at Chittipara, Kerala"
+                        >
 
-        <figcaption>
-            <strong>Chittipara, Kerala</strong>
-            <span>A quiet moment above the hills</span>
-        </figcaption>
+                        <figcaption>
+                            <strong>Chittipara, Kerala</strong>
+                            <span>
+                                A quiet moment above the hills
+                            </span>
+                        </figcaption>
 
-    </figure>
+                    </figure>
 
-</div>
+                </div>
+
 
                 <p class="beyond-caption">
                     More photographs and stories will find their place here
@@ -1000,7 +767,9 @@
 </main>
 
 
+
 <footer>
+
     <div class="container footer-inner">
 
         <span>
@@ -1012,12 +781,10 @@
         </span>
 
     </div>
+
 </footer>
 
 
 </body>
+
 </html>
-
-
-   
-    
